@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+        :visited{
+            color:rgb(33, 226, 81);
+            text-decoration: none;
+        }
+        :link{
+            color: brown;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        ::selection{
+         color: blue;
+         background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/16%20-%20Modelo%20de%20Caixas.pdf" target="_blank">Github do guanabara</a></li>
+        <li><a href="https://youtu.be/V2V0b_bUdm8"target="_blank">youtube do guanabara</a></li>
+        <li><a href="https://www.youtube.com/watch?v=EYXEp4YfViQ"target="_blank">Incomparavel</a></li>
+    </ul>
+</body>
+</html>

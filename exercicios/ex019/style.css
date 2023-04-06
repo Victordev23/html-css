@@ -1,0 +1,25 @@
+body{background-color: rgb(20, 175, 202);
+}
+
+#principal{
+    background-color: rgb(2, 0, 128);
+    text-align: center;
+    color: aliceblue;
+}
+
+.aprendendo{
+    color:rgb(0, 69, 0);
+}
+.basico{
+    color: rgb(3, 253, 140);
+
+}
+.intermediario{
+    color: yellow;
+}
+.avancado{
+    color: red;
+}
+:not(p) {
+    color: #ff0000;
+  }
