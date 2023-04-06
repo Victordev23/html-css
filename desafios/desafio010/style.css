@@ -5,6 +5,9 @@
 }
 body{
     background-color: rgba(247, 225, 154, 0.871);
+    min-width: 350px;
+    max-width: 1000px;
+
 }
 main p{
     margin: 10px 0px;
@@ -54,7 +57,6 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.716);
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 20px;
-    /*colocar sombra*/
 }
 
 .imgbugdroid{
@@ -70,7 +72,6 @@ main a{
     font-weight: bold;
 }
 main a:hover{
-
     color: white;
     text-decoration: underline;
 }
@@ -88,7 +89,6 @@ aside > h3{
 }
 aside > ul{
     list-style-position: inside;
-
     columns: 2;
 
 }
