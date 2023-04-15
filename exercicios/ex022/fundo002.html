@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens repetidas</title>
+    <style>
+        body{
+        
+        }
+        #q1{
+            background-image: url(imagens/pattern001.png);
+            border: 2px solid rgb(75, 225, 29);
+            background-repeat: repeat; /* a imagem se repetira durante toda a caixa*/
+        }
+        #q2{
+            background-image: url(imagens/pattern001.png);
+            border: 2px solid rgb(29, 78, 225);
+            background-repeat: no-repeat;/* a imagem vai se repetir somente uma vez*/
+        }
+        #q3{
+            background-image: url(imagens/pattern001.png);
+            border: 2px solid rgb(255, 0, 136);
+            background-repeat: repeat-x;/* a imagem se repetira no eixo X*/
+        }
+        #q4{ 
+            background-image: url(imagens/pattern001.png);
+            border: 2px solid rgb(225, 29, 29);
+            background-repeat: repeat-y; /* a imagem se repetira somente no eixo Y*/
+        }
+        div{
+            width: 500px;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de aplicação de fundo</h1>
+    <div id="q1"></div>
+    <div id="q2"></div>
+    <div id="q3"></div>
+    <div id="q4"></div>
+
+    
+
+</body>
+</html>
