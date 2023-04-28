@@ -64,12 +64,7 @@ main{
     display: block;
     max-width: 350x;
 }
-#img01{
-    width: 100%;
-}
-#img02{
-    width: 100%;
-}
+
 main a{
     text-decoration: none;
     background-color: forestgreen;
