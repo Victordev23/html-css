@@ -1,5 +1,10 @@
 
 *{ margin: 0; padding: 0;}/*Reset*/
+
+html, body {
+    height: 100%;
+  }
+
 body{
     background-image: url(imagens/espaco.jpg);
     background-repeat: no-repeat;
@@ -9,12 +14,11 @@ body{
    
 }
 #img01{
-    
+    background-size: cover;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
 }
     
    
