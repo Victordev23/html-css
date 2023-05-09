@@ -57,7 +57,8 @@ section.imagem{
     background-image: url(imagens/background001.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; 
+    background-position: center center;
+    max-height: 80vh;
     background-attachment: fixed;
 }
 
