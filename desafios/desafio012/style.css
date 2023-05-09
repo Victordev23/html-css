@@ -45,7 +45,7 @@ section{
     padding-bottom: 5vh;
     padding-top: 7vh;
     padding-left: 15px;
-    font-size: 3vw;
+    font-size: 4vw;
     line-height: 1.5em;
     font-family: 'Sriracha', cursive;
 }
@@ -58,7 +58,7 @@ section.imagem{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
-    max-height: 80vh;
+    max-height: 90vh;
     background-attachment: fixed;
 }
 
