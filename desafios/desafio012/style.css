@@ -38,7 +38,6 @@ h1{
 .imagem p{
     background-color: rgba(0, 0, 0, 0.29);
     font-size: 4vw;
-    display: inline-block;
     color: #ffffff;
 }
 section{
@@ -58,6 +57,7 @@ section.imagem{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
+    display: inline-block;
     max-height: 90vh;
     background-attachment: fixed;
 }
