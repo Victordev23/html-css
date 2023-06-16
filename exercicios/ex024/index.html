@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{
+            margin-right: 40px;
+        }
+        iframe#if1{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste com iframe</h1>
+
+    <p>A tag do Iframe é:<br>
+        &lt;iframe&gt;  &lt;/iframe&gt;
+    </p>
+    <p>Os iframes tem alguns atributos como src, height, width, name, frameborder, etc.</p>
+
+    <h2>src e frameborder</h2>
+
+    <p>No src podemos adicionar links(Os que são aceitos), páginas html locais, documentos em PDF, videos, etc.</p>
+    <p>Já o frameborder define a "borda" do iframe, sendo:<br>
+       frameborder="0"  não irá aparecer nenhuma borda, somente se definimos no css. <br>
+       frameborder="1" qualquer valor diferente de zero sendo positivo vai criar uma "borda" de 1 px em volta do iframe. Ex
+    </p>
+
+    <iframe src="https://victordev23.github.io/html-css/desafios/desafio012/cordel.html" frameborder="0">Page not found</iframe>
+    <iframe src="https://victordev23.github.io/html-css/desafios/desafio012/cordel.html" frameborder="1">Page not found</iframe>
+
+    <h2> Height e Width</h2>
+
+    <p>Para definir a largura e tamanho usamos width e height dentro do iframe ou em uma tag &lt;style&gt;. Lembrando que o css vai se sobrepor as medidas definidas na tag local. Ex:</p>
+
+    <iframe id="if1" height="400px" width="500px"></iframe>
+
+    <h2>Alternando links dentro do iframe</h2>
+
+    <p>Para alterar entre páginas utilizamos a tag &lt;a&gt; com o atributo target="Nome do iframe". Exemplo:</p>
+
+    <ul>
+        <li><a href="paginas-teste/pagina01.html" target="framep">Página teste 01</a></li>
+        <li><a href="paginas-teste/pagina02.html" target="framep">Página teste 02</a></li>
+        <li><a href="paginas-teste/pagina03.html" target="framep">Página teste 03</a></li>
+    </ul>
+            <!--O srcdoc permite usar html e foi utilizado para a página do iframe não ficar vazia-->
+    <iframe srcdoc=" <h1> Escolha uma das opções acima!<//h1>" name="framep" height="300px" width="500px"></iframe>
+
+    <h2>Videos</h2>
+    <p>Podemos adicionar videos também com iframes. Ex:</p>
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/248747830?h=cdc266ece7&autoplay=1&loop=1&portrait=0" style="position:absolute;top:0;left:0;width:70%;height:60%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>
