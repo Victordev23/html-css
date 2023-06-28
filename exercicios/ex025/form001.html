@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Criando um formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" minlength="2" name="nome" id="inome" autocomplete="off" required>
+        </p>
+        <p>
+            <label for="isobre">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobre" required>
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" minlength="8" maxlength="28" size="20" required>
+        </p>
+        <p>
+            <label for="imail">Email:</label>
+            <input type="email" name="mail" id="imail" required placeholder="nome@exemplo.com">
+        </p>
+        <fieldset>
+            <legend>Artes marciais</legend>
+            <p>Escolha uma das artes marciais</p>
+            <p>
+                <input type="checkbox" name="Boxe" id="iBoxe"> <label for="iBoxe">Boxe</label> <br>
+                <input type="checkbox" name="jiujitsu" id="ijj"> <label for="ijj">Jiu-jitsu</label> <br>
+                <input type="checkbox" name="judo" id="ijudo"> <label for="ijudo">Judô</label> <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="smas"> <label for="smas">Masculino</label> <br>
+                <input type="radio" name="sexo" id="sfem"> <label for="sfem">Feminino</label>
+            </p>
+        </fieldset>
+
+        
+            <fieldset>
+                <legend>Estado</legend>
+                <label for="iestado">Selecione seu Estado:</label>
+                <select name="estado" id="iestado">
+                    <option value="padrão" selected>--Escolha um estado</option>
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="DF">Distrito Federal (DF)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                    </select>
+            </fieldset>
+        </p>
+
+        <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+    </form>
+</body>
+</html>
