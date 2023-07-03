@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #000000;
+}
+
+html{
+    height: 100vh;
+}
+
+@media all{
+    main{
+        color: #ffffff;
+        background-color: #9f9393a2;
+        margin: auto;
+        width: 70vw;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
+    img#tv{ display: none;}
+    img#tel{ display: none;}
+    img#impr{ display: none;}
+    img#tab{ display: none;}
+    img#pc{ display: none;}
+}
+
+/*Versão mobile*/
+@media screen and (max-width: 590px) {
+    body{
+        background-image: url(imagens/back-phone.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    img#tel{
+        display: block;
+    }
+}
+
+/*Versão tablet*/
+@media screen and (min-width:590px) and (max-width:1050px){
+    body{
+        background-image: url(imagens/back-tablet.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    img#tab{
+        display: block;
+    }
+}
+
+/*Versão para Telas grandes*/
+@media screen and (min-width:1050px){
+    body{
+        background-image: url(imagens/back-pc.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    img#pc{
+        display: block;
+    }
+}
+
+/*Versão para impressoras*/
+@media print {
+    main{
+        color: #0a0a0a;
+        text-align: center;
+    }
+    img#impr{
+        margin: auto;
+        display: block;
+    }
+}
