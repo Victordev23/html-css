@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site teste</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+
+</head>
+<body onresize="tamanho()">
+    <header>
+        <h1>Site de exemplo</h1>
+        <i class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>Testando media queries</h2>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel error blanditiis sapiente ipsa veritatis, reprehenderit repellat aliquam fuga, sunt corrupti culpa. Accusantium eius quisquam, inventore id fugiat atque ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus fuga consequuntur dicta! Qui recusandae, dolorem ipsa magni consectetur officia soluta saepe, facere expedita cum illum eligendi ex repellendus perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum in nihil perspiciatis delectus corporis reprehenderit sequi totam cum harum. Temporibus blanditiis sequi molestiae veritatis ullam culpa delectus doloribus tempore.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim corporis beatae veniam laboriosam placeat? Inventore amet soluta quisquam. Alias debitis distinctio molestias necessitatibus ex. Provident libero vero possimus fugiat quasi?
+        Ea consectetur impedit quae molestias quos suscipit tempora corporis veniam aperiam, ut eum earum possimus pariatur quasi, blanditiis reiciendis sit id velit maxime culpa! Non explicabo repudiandae eaque aperiam doloribus.
+        Nostrum labore atque obcaecati veniam voluptatibus officiis facere nulla nihil ullam natus explicabo magnam, temporibus cumque? Voluptas doloremque explicabo, architecto eveniet, earum odio tempora quisquam possimus impedit odit voluptatibus eum!</p>
+
+    </main>
+    <script>
+
+        function tamanho() {
+            if (window.innerWidth >= 800){
+                menu.style.display = 'block'
+            }
+
+            else {
+                menu.style.display = 'none'
+            }
+
+        }
+
+
+        function clickMenu() {
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
